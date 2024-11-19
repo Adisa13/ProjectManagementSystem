@@ -6,11 +6,11 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
     />
-    </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand fw-bold" href="#">Project Management</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -25,14 +25,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-white" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-white"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -60,27 +60,29 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-light" type="submit">
               Search
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <nav>
-      <div>
-        <a href="/index.html">Project Management System</a>
-      </div>
-      <div>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <a href="/students.html">Manage Students</a>
-        <a href="/projects.html">Manage Projects</a>
-      </div>
-    </nav>
 
-    <div>
-      <h1 id="homePageH1">Welcome to the Project Management System</h1>
-      <p>Use the navigation bar to manage projects, tasks, or teams.</p>
+    <div class="container mt-5 text-center">
+      <div class="mb-4">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg"
+          onclick="helloFromExternal()"
+        >
+          Warning
+        </button>
+      </div>
+      <h1 id="homePageH1" class="display-4 text-primary fw-bold">Welcome to the Project Management System</h1>
+      <p class="lead">Use the navigation bar to manage projects, tasks, or teams.</p>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>
